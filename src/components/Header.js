@@ -23,5 +23,3 @@ Header.propTypes = {
 }
 
 export default Header;
-
-/* test 2 */
