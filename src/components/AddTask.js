@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const AddTask = () => {
+    const [text, setText] = useState('');
+    
+
     return (
         <form className='add-form'>
             <div className="form-control">
