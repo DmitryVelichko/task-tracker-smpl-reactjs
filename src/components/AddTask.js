@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const AddTask = () => {
     const [text, setText] = useState('');
-    
+    const [day, setDay] = useState('');
 
     return (
         <form className='add-form'>
