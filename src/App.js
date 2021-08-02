@@ -5,6 +5,7 @@ import Tasks from './components/Tasks';
 import AddTask from './components/AddTask';
 
 function App() {
+  const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([
     {
         id: 1,
@@ -30,7 +31,10 @@ function App() {
 
   const addTask = (task) => {
     const id = Math.floor(Math.random() * 10000) + 1;
-    console.log(id);
+    const newTask = { id, ...task }
+    console.log(newTask)
+    setTasks([...tasks, newTask])
+    console.log(tasks);
   }
 
   // Delete Task
